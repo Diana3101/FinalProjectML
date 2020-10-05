@@ -1,0 +1,33 @@
+{
+    "description":{
+        "X": [
+            "review"
+        ],
+        "final_columns":[
+            "Processed_Reviews"
+                ],
+        "y":"sentiment",
+        "metrics":"accuracy"
+    },
+
+    "operations":[
+    {
+            "operation_number":1,
+            "operation_name":"drop_column",
+            "params": {
+              "in_columns": [
+                "Unnamed: 0"
+              ]
+            }
+    },
+    {
+            "operation_number":2,
+            "operation_name":"add_columns",
+            "params":{
+                "out_columns":[
+                  "Processed_Reviews"
+                ]
+            }
+        }
+    ]
+}
